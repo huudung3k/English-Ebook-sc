@@ -1,0 +1,40 @@
+.home-header {
+    @apply w-full h-[45rem] pl-32 bg-white flex items-center -mt-[4.5rem] relative
+}
+
+.home-header .right-bg {
+    background-image: url('/images/home-header-background.jpg');
+    @apply max-w-[50%] w-full h-full ml-auto bg-no-repeat bg-cover bg-left-top
+}
+
+.home-header .right-bg .right-bg-overlay {
+    @apply w-[80%] h-[80%]
+}
+
+.home-header .left-content {
+    @apply w-[50%] h-full flex flex-col items-start justify-center absolute left-32 top-0
+}
+
+.home-header .left-content>h1 {
+    @apply text-[5rem] font-bold uppercase leading-tight
+}
+
+.home-header .left-content>p {
+    @apply text-2xl font-normal leading-none capitalize mt-4
+}
+
+@media only screen and (min-width: 2000px) {}
+
+@media only screen and (max-width: 1280px) {
+    .home-header .left-content>h1 {
+        @apply text-6xl leading-tight
+    }
+
+    .home-header .left-content>p {
+        @apply text-xl leading-none
+    }
+
+    .home-header .right-bg {
+        @apply max-w-[60%]
+    }
+}

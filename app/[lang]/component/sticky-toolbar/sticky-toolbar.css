@@ -1,0 +1,92 @@
+.sticky-toolbar-container {
+    @apply min-w-[5rem] fixed right-0 top-1/2 -translate-y-1/2 text-center z-[60]
+}
+
+.sticky-toolbar-container .toggle-toolbar {
+    background: var(--orange);
+}
+
+.sticky-toolbar-container .toggle-toolbar.open-toolbar {
+    @apply w-full absolute top-1/2 right-0 -translate-y-1/2
+}
+
+.sticky-toolbar-container .sticky-toolbar {
+    @apply flex flex-col translate-x-full
+}
+
+.sticky-toolbar-container .sticky-toolbar .toolbar-items-group {
+    @apply w-full translate-x-full hidden
+}
+
+.sticky-toolbar-container .toggle-toolbar.open-toolbar,
+.sticky-toolbar-container .sticky-toolbar,
+.sticky-toolbar-container .sticky-toolbar .toolbar-items-group {
+    @apply transition-transform duration-200 shadow-lg shadow-[#dc703850]
+}
+
+.sticky-toolbar-container .sticky-toolbar .toolbar-item,
+.sticky-toolbar-container .toggle-toolbar.open-toolbar,
+.sticky-toolbar-container .toggle-toolbar.close-toolbar {
+    color: var(--white);
+    @apply p-6 font-bold text-xl min-w-[5rem]
+}
+
+.sticky-toolbar-container .sticky-toolbar .toolbar-item {
+    background: var(--orange);
+    @apply relative inline-block mb-[1px] cursor-pointer
+}
+
+.sticky-toolbar-container .sticky-toolbar .toolbar-item.selected {
+    color: var(--green);
+}
+
+.sticky-toolbar-container .sticky-toolbar .toolbar-item::before,
+.sticky-toolbar-container .sticky-toolbar .toolbar-item::after {
+    @apply absolute top-1/2 -translate-y-1/2 pointer-events-none transition-opacity duration-200 opacity-0
+}
+
+.sticky-toolbar-container .sticky-toolbar .toolbar-item:before {
+    content: attr(data-tooltip);
+    right: calc(100% + 5px);
+    color: var(--white);
+    background: var(--orange);
+    @apply text-sm whitespace-nowrap py-1 px-2
+}
+
+.sticky-toolbar-container .sticky-toolbar .toolbar-item:after {
+    content: "";
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid var(--orange);
+    @apply right-full w-0 h-0
+}
+
+.sticky-toolbar-container .sticky-toolbar .toolbar-item:hover::before,
+.sticky-toolbar-container .sticky-toolbar .toolbar-item:hover::after {
+    @apply opacity-100
+}
+
+.sticky-toolbar-container.show-toolbar .open-toolbar {
+    @apply translate-x-full -translate-y-1/2
+}
+
+.sticky-toolbar-container.show-toolbar .sticky-toolbar {
+    @apply transform-none
+}
+
+.sticky-toolbar-container.show-toolbar .sticky-toolbar .toolbar-items-group.show-group {
+    @apply transform-none flex flex-col transition-transform duration-200
+}
+
+.sticky-toolbar-container .sticky-toolbar .sticky-nav-menu {
+    right: calc(100% + 5px);
+    @apply fixed top-0
+}
+
+.sticky-toolbar-container .sticky-toolbar .sticky-nav-menu:after {
+    content: "";
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid var(--orange);
+    @apply left-full w-0 h-0 absolute top-1/2 -translate-y-1/2 pointer-events-none transition-opacity duration-200
+}

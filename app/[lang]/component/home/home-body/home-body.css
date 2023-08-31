@@ -1,0 +1,9 @@
+.home-body {
+    background-color: #F5F6F8;
+    @apply w-full h-full px-12 py-[5.5rem]
+}
+
+.home-body .content .units-container {
+    background-color: #F5F6F8;
+    @apply w-full h-full grid gap-16 grid-cols-fluid shadow-2xl px-12 py-10 rounded-2xl
+}

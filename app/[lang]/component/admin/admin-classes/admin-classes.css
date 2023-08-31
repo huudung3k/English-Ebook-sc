@@ -1,0 +1,31 @@
+.content {
+    @apply grow bg-white flex flex-col items-start justify-start px-12 pt-12
+}
+
+.content .title {
+    @apply font-semibold text-2xl ml-4
+}
+
+.content .table-container {
+    @apply w-[90%] z-0
+}
+
+.content .chart-container {
+    @apply w-[90%] mt-8 flex flex-col items-center
+}
+
+.content .chart-container .control {
+    @apply flex items-center self-start
+}
+
+.content .chart-container .control > * {
+    @apply mr-4
+}
+
+.content .chart-container .control .error {
+    @apply text-red-500 text-lg
+}
+
+.content .chart-container .chart {
+    @apply w-full
+}

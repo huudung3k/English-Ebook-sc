@@ -1,0 +1,38 @@
+{
+	"active": "Hoạt động",
+	"admin": {
+        "accept-answer": "Chấp nhận bài làm",
+        "book-content": "Nội dung sách",
+        "classes": "Lớp học",
+        "dashboard": "Dashboard",
+        "latest-assignments": "Bài tập mới nhất",
+        "main-menu": "Main Menu",
+        "message": {
+            "please-select-class-and-unit": "Vui lòng chọn lớp và unit"
+        },
+        "reject-answer": "Từ chối bài làm",
+        "student-answer": "Bài làm của học sinh",
+        "template-answer": "Bài làm mẫu",
+        "update-score": "Cập nhật điểm",
+        "view-chart": "Xem biểu đồ",
+        "number-of-students": "Số học sinh"
+    },
+	"apply": "Áp dụng",
+	"class": "Lớp học",
+	"clear": "Xóa",
+	"date": "Ngày",
+	"filters": "Bộ lọc",
+	"finished": "Đã hoàn thành",
+	"load": "Tải",
+	"load-active-record": "Tải bài làm hiện tại",
+	"name": "Tên",
+	"part": "Phần",
+	"rejected": "Đã từ chối",
+	"score": "Điểm",
+	"section": "Đoạn",
+	"status": "Trạng thái",
+	"unit": "Unit",
+	"update-active-record": "Cập nhật bài làm hiện tại",
+	"year": "Năm",
+	"student-name": "Tên học sinh"
+}

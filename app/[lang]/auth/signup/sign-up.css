@@ -1,0 +1,4 @@
+.signup-page-container{
+    background-color: var(--light-green);
+    @apply w-screen h-screen flex items-center justify-center 
+}

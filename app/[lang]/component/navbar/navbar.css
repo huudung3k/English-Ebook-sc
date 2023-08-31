@@ -1,0 +1,45 @@
+/* Header */
+.nav-bar {
+    @apply w-full h-[4.5rem] sticky top-0 z-10 flex items-center bg-transparent justify-between px-32 transition-colors duration-300 ease-in-out
+}
+
+.nav-bar.scrolled {
+    background-color: #FF971D;
+}
+
+.nav-bar .logo {
+    @apply w-52
+}
+
+.nav-bar .nav {
+    @apply flex items-center justify-evenly gap-12 text-lg
+}
+
+.nav-bar .nav>.link {
+    @apply text-white relative
+}
+
+.nav-bar .nav>.link::after {
+    content: '';
+    @apply w-8 h-[2px] bg-white rounded-full absolute bottom-0 left-1/2 -translate-x-1/2 opacity-0 invisible transition-opacity duration-500
+}
+
+.nav-bar .nav>.link:hover:after {
+    @apply opacity-100 visible transition-opacity duration-500
+}
+
+.nav-bar .nav .auth-btn {
+    @apply rounded-full bg-white text-black py-2 px-10 font-bold
+}
+
+@media only screen and (min-width: 2000px) {
+    .nav-bar {
+        @apply w-full
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .nav-bar {
+        @apply w-full
+    }
+}

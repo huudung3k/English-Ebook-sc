@@ -1,0 +1,38 @@
+{
+	"active": "Active",
+	"admin": {
+        "accept-answer": "Accept Answer",
+        "book-content": "Book Content",
+        "classes": "Classes",
+        "dashboard": "Dashboard",
+        "latest-assignments": "Latest Assignments",
+        "main-menu": "Main Menu",
+        "message": {
+            "please-select-class-and-unit": "Please select class and unit"
+        },
+        "reject-answer": "Reject Answer",
+        "student-answer": "Student Answer",
+        "template-answer": "Template Answer",
+        "update-score": "Update Score",
+        "view-chart": "View Chart",
+        "number-of-students": "Number of Students"
+    },
+	"apply": "Apply",
+	"class": "Class",
+	"clear": "Clear",
+	"date": "Date",
+	"filters": "Filters",
+	"finished": "Finished",
+	"load": "Load",
+	"load-active-record": "Load Active Record",
+	"name": "Name",
+	"part": "Part",
+	"rejected": "Rejected",
+	"score": "Score",
+	"section": "Section",
+	"status": "Status",
+	"unit": "Unit",
+	"update-active-record": "Update Active Record",
+	"year": "Year",
+	"student-name": "Student Name"
+}

@@ -1,0 +1,16 @@
+.playback-container {
+    color: #f15a5a;
+    @apply flex h-full items-center justify-start
+}
+
+.playback-btn:disabled {
+    @apply text-gray-400 cursor-pointer
+}
+
+.playback-btn {
+    @apply text-2xl mr-4 my-2
+}
+
+.playback-btn.selected {
+    @apply text-green-500
+}

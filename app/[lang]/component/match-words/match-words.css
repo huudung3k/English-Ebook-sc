@@ -1,0 +1,44 @@
+.section-match-word {
+    @apply flex flex-col w-full h-full pt-4
+  }
+  
+  .section-match-word-row {
+    @apply flex items-start mb-2
+  }
+  
+  .section-match-word-row .form-control {
+    @apply flex-1
+  }
+  
+  .section-match-word-row .form-control input {
+    @apply !w-10
+  }
+  
+  .section-match-word-row .left,
+  .section-match-word-row .right {
+    @apply flex items-start relative flex-1 justify-center
+  }
+  
+  .section-match-word-row .left div.number {
+    background-color: var(--yellow);
+    color: var(--white);
+    @apply rounded-full w-6 h-6 flex items-center justify-center absolute -left-[0.8rem] z-10 top-1 font-bold
+  }
+  
+  .section-match-word-row .left div.content {
+    border-color: var(--yellow);
+    @apply rounded-xl flex items-center justify-center border-2 px-4 py-2 w-full
+  }
+  
+  .section-match-word-row .right div.number {
+    border-color: var(--yellow);
+    background-color: var(--white);
+    color: var(--yellow);
+    @apply rounded-full border-2 w-6 h-6 flex items-center justify-center absolute z-10 -left-[0.8rem] top-1 font-bold
+  }
+  
+  .section-match-word-row .right div.content {
+    background-color: var(--light-yellow);
+    @apply rounded-xl w-full px-4 py-2 mb-6 flex items-center justify-center
+  }
+  

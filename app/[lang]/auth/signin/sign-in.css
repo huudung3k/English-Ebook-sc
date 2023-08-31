@@ -1,0 +1,54 @@
+.signin-page-container{
+    background-color: var(--light-orange);
+    @apply w-screen h-screen flex items-center justify-center
+}
+
+.signin {
+    background-color: var(--white);
+    @apply 2xl:w-[90rem] 2xl:h-[64rem] 2xl:px-[11.25rem] rounded-2xl drop-shadow-xl flex items-center justify-around md:w-[60rem] md:h-[44rem] md:px-20
+}
+
+.signin-form {
+    @apply max-w-[50%] flex flex-col items-center justify-start px-[3.25rem] pt-14 pb-12 gap-8
+}
+
+.signin-form .title-group {
+    @apply flex flex-col items-center gap-3
+}
+
+.signin-form .title {
+    @apply text-[2.5rem] font-bold leading-normal tracking-wide
+}
+
+.signin-form .sub-title {
+    @apply text-[1.375rem] font-normal leading-normal tracking-wide text-center 2xl:w-[70%] md:w-full
+}
+
+.signin-form .credential {
+    @apply flex flex-col items-start justify-center gap-6 w-96
+}
+
+.signin-form .credential .input {
+    @apply 2xl:h-12 md:h-8
+}
+
+.signin-form .credential .signup-now {
+    @apply text-xs font-light leading-normal mx-2 -mt-1
+}
+
+.signin-form .credential .signup-now .link {
+    @apply font-bold text-black ml-1
+}
+
+.signin-form .signin-btn {
+    background-color: var(--orange);
+    @apply flex items-center justify-center w-96 2xl:h-12 md:h-8 rounded-lg text-white mt-2
+}
+
+.welcome {
+    @apply flex items-center justify-center max-w-[50%]
+}
+
+.signin .error {
+    @apply text-red-500 -my-4
+}

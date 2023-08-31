@@ -1,0 +1,11 @@
+export const PART_NAME = {
+    GETTING_STARTED: 1,
+    LANGUAGE: 2,
+    READING: 3,
+    SPEAKING: 4,
+    LISTENING: 5,
+    WRITING: 6,
+    CULTURE: 7,
+    LOOKING_BACK: 8,
+    PROJECT: 9
+}

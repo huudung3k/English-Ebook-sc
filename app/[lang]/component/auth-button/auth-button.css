@@ -1,0 +1,11 @@
+.auth-btn-container {
+    @apply flex items-center justify-end text-lg
+}
+
+.auth-btn-container .not-auth-group {
+    @apply flex items-center justify-evenly
+}
+
+.auth-btn-container .hello-user {
+    @apply capitalize
+}

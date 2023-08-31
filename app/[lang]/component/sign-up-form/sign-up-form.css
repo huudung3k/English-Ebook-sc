@@ -1,0 +1,62 @@
+.signup {
+    background-color: var(--white);
+    @apply 2xl:w-[90rem] 2xl:h-[64rem] 2xl:px-[11.25rem] rounded-2xl drop-shadow-xl flex items-center justify-around md:w-[60rem] md:h-[44rem] md:px-20
+}
+
+.signup-form {
+    @apply max-w-[50%] flex flex-col items-center justify-start px-[3.25rem] pt-14 pb-12 2xl:gap-8 md:gap-4
+}
+
+.signup-form .title-group {
+    @apply flex flex-col 2xl:gap-3 md:gap-1
+}
+
+.signup-form .title {
+    @apply text-[2.5rem] font-bold leading-normal tracking-wide
+}
+
+.signup-form .sub-title {
+    @apply text-[1.375rem] font-normal leading-normal tracking-wide text-start w-max
+}
+
+.signup-form .credential {
+    @apply flex flex-col items-start justify-center gap-4 w-96
+}
+
+.signup-form .credential .input {
+    @apply 2xl:h-12 md:h-8
+}
+
+.signup-form .credential .dropdown {
+    -color: var(--green);
+    @apply w-full flex items-center justify-start pl-0
+}
+
+.signup-form .credential .signin-now {
+    @apply text-xs font-light leading-normal mx-2
+}
+
+.signup-form .credential .signin-now .link {
+    @apply font-bold text-black ml-1
+}
+
+.signup-form .signup-btn {
+    background-color: var(--green);
+    @apply w-96 2xl:h-12 md:h-8 text-white mt-2
+}
+
+.signup-img {
+    @apply flex items-center justify-center max-w-[50%]
+}
+
+.signup .error {
+    @apply text-red-500 -my-4 w-[90%]
+}
+
+.signup .success {
+    @apply -my-4 w-[90%] text-green-500
+}
+
+.signup .success .link {
+    @apply text-black font-bold
+}

@@ -1,0 +1,169 @@
+.unit-page-container {
+    background-color: var(--white);
+    @apply w-[80%] min-h-screen h-max pl-1 relative
+}
+
+.topic {
+    background-color: var(--orange);
+    box-shadow: 0px 10px var(--light-orange);
+    width: calc(100% - 0.25rem);
+    @apply h-40 absolute top-20 z-10
+}
+
+.topic p {
+    color: #fefefa;
+    @apply text-6xl font-bold absolute top-11 left-[21.5rem]
+}
+
+.unit {
+    background-color: var(--green);
+    @apply w-52 h-52 absolute top-16 left-24 z-20
+}
+
+.unit p {
+    font-family: var(--font-bree-serif);
+    color: var(--white);
+    @apply text-4xl leading-3 absolute top-9 left-[4.5rem]
+}
+
+.unit p:last-child {
+    font-family: var(--font-ubuntu);
+    color: var(--white);
+    @apply text-[9rem] leading-3 absolute left-[4.3rem] top-[7rem]
+}
+
+.unit .triangle-topleft {
+    border-top: 2rem solid var(--green);
+    border-right: 13rem solid transparent;
+    @apply w-0 h-0 absolute left-0 top-52
+}
+
+.unit .triangle-bottomright {
+    border-bottom: 1rem solid var(--green);
+    border-left: 13rem solid transparent;
+    @apply w-0 h-0 absolute left-0 -top-4
+}
+
+.unit .triangle-bottomleft {
+    border-bottom: 2rem solid #828a85;
+    border-right: 1rem solid transparent;
+    @apply w-0 h-0 absolute left-52 -top-4
+}
+
+.first-page {
+    @apply w-full h-full flex
+}
+
+.summary {
+    background-color: #e0e584;
+    @apply w-[26rem] min-h-full relative flex flex-col pr-10
+}
+
+.summary h3 {
+    background-color: var(--white);
+    color: #316674;
+    @apply w-[20rem] h-8 mt-[23rem] rounded-r-full flex items-center pl-[5.75rem] text-xl font-bold
+}
+
+.summary-content {
+    @apply w-full h-max mt-4 pl-[5.75rem] pr-6
+}
+
+.summary-content p {
+    @apply leading-5 mb-3
+}
+
+.part-one-col {
+    @apply h-full w-full mt-[19rem] ml-16
+}
+
+.part-title-group {
+    @apply flex items-center
+}
+
+.part-number {
+    font-family: var(--font-bree-serif);
+    color: var(--green);
+    background-color: var(--light-green);
+    @apply text-[3.75rem] min-w-[5rem] w-max h-20 flex items-center justify-center pb-2 px-2
+}
+
+.part-title {
+    background-color: var(--green);
+    color: var(--white);
+    font-family: var(--font-soho);
+    @apply text-[2.3rem] h-20 min-w-[29rem] tracking-wide flex items-center pl-4 pr-6
+}
+
+.first-section {
+    @apply mr-10
+}
+
+.part-two-col {
+    @apply w-full h-full flex justify-center px-20 pb-20
+}
+
+.part-two-col .col-left {
+    @apply w-1/2 h-full mr-5
+}
+
+.part-two-col .col-right {
+    @apply w-1/2 h-full ml-5
+}
+
+.mini-unit {
+    background-color: var(--orange);
+    @apply h-24 w-24 flex items-center justify-center absolute top-0 right-20 pt-5
+}
+
+.mini-unit p {
+    color: var(--white);
+    font-family: var(--font-ubuntu);
+    @apply text-6xl
+}
+
+.mini-unit p:first-child {
+    font-family: var(--font-bree-serif);
+    @apply text-2xl
+}
+
+.mini-unit .left-triangle {
+    border-bottom: 6rem solid var(--orange);
+    border-left: 3rem solid transparent;
+    @apply w-0 h-0 absolute top-0 right-24
+}
+
+.mini-unit .right-triangle {
+    border-top: 6rem solid var(--orange);
+    border-right: 3rem solid transparent;
+    @apply w-0 h-0 absolute top-0 left-24
+}
+
+.two-col-page {
+    @apply pt-36
+}
+
+.part-title-secondary {
+    @apply ml-20
+}
+
+.full-page-col {
+    @apply w-full h-full px-20 pt-4
+}
+
+.part-title-shadow {
+    box-shadow: -12px 12px var(--light-green);
+    @apply !w-max min-w-[10rem] px-8
+}
+
+@media only screen and (min-width: 2000px) {
+    .unit-page-container {
+        @apply w-[60%]
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .unit-page-container {
+        @apply w-full
+    }
+}

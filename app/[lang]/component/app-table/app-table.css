@@ -1,0 +1,19 @@
+.data-table tr, .data-table td {
+    @apply cursor-pointer
+}
+
+.table {
+    @apply w-full flex flex-col items-center justify-start
+}
+
+.table > div {
+    @apply w-full
+}
+
+.table .filters {
+    @apply flex items-center justify-start my-4
+}
+
+.table .filters > * {
+    @apply mx-4
+}

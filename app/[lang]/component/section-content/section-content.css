@@ -1,0 +1,218 @@
+.section {
+    @apply mt-8
+}
+
+.section h2 {
+    color: var(--white);
+    background-color: var(--blue);
+    @apply text-lg font-bold -mb-2 mt-4 ml-2 w-max h-max border rounded-xl border-transparent px-3 tracking-wider leading-tight
+}
+
+.section h3 {
+    color: var(--purple);
+    @apply italic text-[1.4rem] font-extrabold mb-1 mt-4
+}
+
+.section h4 {
+    @apply text-xl font-extrabold mb-2 mt-3 flex items-center
+}
+
+.section h4 .audio-container {
+    @apply self-start cursor-pointer
+}
+
+.section h4 span {
+    color: var(--orange);
+    @apply mr-3 text-2xl
+}
+
+.section h4 span:first-child {
+    @apply self-start relative top-0 left-0
+}
+
+.section h4 audio {
+    @apply h-8 fixed right-0 top-1/4 z-50 w-60
+}
+
+.section-content {
+    @apply leading-6 h-full w-full pl-7
+}
+
+.section-content p {
+    @apply mb-2
+}
+
+.section-content table {
+    @apply border-spacing-y-2 border-spacing-x-2 border-separate align-top !w-full
+}
+
+.section-content td {
+    @apply align-top pb-1 leading-relaxed
+}
+
+.section-content tr td:nth-child(2) {
+    @apply pl-3
+}
+
+.section-content img {
+    max-width: 40%;
+    @apply h-auto inline-block mx-2
+}
+
+.section-content p:has(img) {
+    @apply flex items-center justify-around
+}
+
+.section-content ul {
+    @apply list-disc pl-8
+}
+
+.section-table td {
+    @apply align-middle
+}
+
+.section-table table {
+    @apply border-collapse
+}
+
+.section-table table,
+.section-table th,
+.section-table td {
+    border-color: var(--purple);
+    @apply border-dotted border-[1.5px] px-2 leading-loose z-0
+}
+
+.section-table tr:nth-child(odd) td {
+    background-color: var(--table-odd-row-color);
+}
+
+.section-table tr:nth-child(even) td {
+    background-color: var(--table-even-row-color);
+}
+
+.section-table tr:first-child td {
+    background-color: var(--table-header-color);
+    @apply font-bold leading-loose
+}
+
+.section-table table[style*=border-color],
+.section-table td[style*=border-color] {
+    border-color: inherit;
+}
+
+.section-table table[style*=border-width],
+.section-table td[style*=border-width] {
+    border-width: inherit;
+}
+
+.section-table table[style*=border-style],
+.section-table td[style*=border-style] {
+    border-style: inherit;
+}
+
+.section-table table[style*=background-color] td,
+.section-table tr[style*=background-color] td {
+    background-color: inherit;
+}
+
+.section-exercise .form-control {
+    font-family: system-ui, sans-serif;
+    @apply inline-flex items-center justify-center font-bold text-base
+}
+
+.section-exercise input[type="text"] {
+    @apply w-24 bg-transparent border-b-[0.5px] border-black text-xl font-normal
+}
+
+.section-exercise input[type="radio"] {
+    font: inherit;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.12em solid currentColor;
+    @apply rounded-full grid place-content-center -translate-y-[0.075rem] m-0 appearance-none bg-white
+}
+
+.section-exercise input[type="radio"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    box-shadow: inset 1em 1em currentColor;
+    @apply scale-0 transition-transform duration-150 ease-in-out rounded-full
+}
+
+.section-exercise input[type="radio"]:checked::before {
+    @apply scale-100
+}
+
+.section-exercise input[type="radio"][disabled] {
+    @apply border-gray-400
+}
+
+.section-exercise input:focus {
+    @apply outline-none
+}
+
+.section-content textarea {
+    @apply w-full bg-transparent border-b-[0.5px] border-black text-xl
+}
+
+.section-content textarea:focus {
+    @apply outline-none
+}
+
+.section-exercise p:has(input[type="checkbox"]) {
+    @apply flex items-center justify-around
+}
+
+.section-table td .form-control:not(:has(input[type='text'])),
+.section-table td > .form-control input[type='text'] {
+    @apply w-full
+}
+
+.section .btn-group {
+    @apply flex items-center justify-end mt-4
+}
+
+.section .btn-group>* {
+    @apply ml-4
+}
+
+.section .history {
+    @apply flex items-center justify-end my-4 text-xl relative pr-4 z-10 h-1
+}
+
+.section .history .history-icon {
+    @apply cursor-pointer
+}
+
+.section .history .records {
+    background-color: var(--light-orange);
+    @apply absolute top-full right-[1rem] p-2 rounded-lg invisible transition-all duration-200 opacity-0
+}
+
+.section .history .records.show {
+    @apply visible opacity-100
+}
+
+.section .history .no-record {
+    @apply w-full h-full text-lg text-center
+}
+
+.section .history .records table {
+    @apply border-collapse border-none max-w-lg
+}
+
+.section .history .records th,
+.section .history .records td {
+    background-color: var(--light-orange);
+    @apply border-t-0 border-l-0 border-r-0 border-b border-black border-solid text-base font-normal text-center min-w-[5rem]
+}
+
+.section .history .records th {
+    @apply font-bold
+}
+
+.section .history .records p {
+    @apply w-full flex items-center justify-evenly
+}

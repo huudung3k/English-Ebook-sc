@@ -1,0 +1,15 @@
+.option {
+    @apply flex flex-row items-center justify-center w-full gap-2
+}
+
+.nextui-popover-content {
+    @apply w-32
+}
+
+.nextui-dropdown-item {
+    @apply flex flex-row items-center justify-start w-28
+}
+
+.nextui-dropdown-item-content {
+    @apply flex flex-row items-center justify-start gap-2
+}

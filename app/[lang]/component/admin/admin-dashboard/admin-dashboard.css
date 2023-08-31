@@ -1,0 +1,53 @@
+.content {
+    @apply grow bg-white flex flex-col items-start justify-start px-12 pt-12
+}
+
+.content .title {
+    @apply font-semibold text-2xl ml-4
+}
+
+.content .table-container {
+    @apply w-[90%] z-0
+}
+
+.content .review-assignment-container {
+    @apply w-[90%]
+}
+
+.content .review-assignment {
+    @apply flex items-start justify-start gap-20 h-full w-full mt-4
+}
+
+.content .review-assignment .answer-container {
+    @apply p-4 h-full border-2 border-gray-200 rounded-3xl
+}
+
+.content .review-assignment .answer-container h3{
+    @apply text-xl font-semibold w-full text-center
+}
+
+.content .review-assignment > div {
+    @apply w-1/2
+}
+
+.content .review-assignment .template-remind {
+    @apply text-xl text-center text-orange-400 mt-4
+}
+
+.content .score-group {
+    @apply text-xl font-bold mt-4 flex items-center justify-start
+}
+
+.content .score-group > * {
+    @apply mr-4
+}
+
+.content .score-group .score input {
+    @apply w-8 border-b border-black outline-none mr-1
+}
+
+
+.content .score-group > p {
+    color: #1DE2AE;
+    @apply text-lg
+}

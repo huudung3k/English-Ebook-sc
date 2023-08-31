@@ -1,0 +1,20 @@
+.reading-card {
+    background: rgb(236, 214, 214);
+    box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.1);
+
+    @apply px-8 py-8 border-[3px] border-solid border-transparent rounded-lg
+}
+
+.reading-card h1 {
+    color: #f15a5a;
+    @apply font-semibold text-4xl
+}
+
+.btn-panel {
+    @apply flex items-center border rounded-lg border-transparent bg-gray-300 w-[9.3rem] pl-2 -ml-2 relative
+}
+
+.btn-panel .loading {
+    background-color: rgb(236, 214, 214);
+    @apply absolute left-40 top-2
+}

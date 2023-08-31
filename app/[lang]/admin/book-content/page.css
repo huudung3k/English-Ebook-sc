@@ -1,0 +1,41 @@
+.content {
+    @apply grow bg-white flex flex-col items-start justify-start px-12 pt-12
+}
+
+.content .filter {
+    @apply flex items-center w-max gap-4
+}
+
+.content .filter .dropdown-btn {
+    @apply !px-3
+}
+
+.content .filter .dropdown-btn .inner {
+    @apply min-w-[3rem] h-full
+}
+
+.content .filter .clear {
+    @apply !pl-1 !pr-2
+}
+
+.content .content-block {
+    @apply flex flex-col w-full gap-4 mt-4 border-2 rounded-3xl border-gray-200 p-6
+}
+
+.content .content-block h2{
+    @apply text-3xl self-center
+}
+
+.content .content-block label, .content .content-block label > span {
+    @apply text-xl
+}
+
+.content .content-block .update-btn {
+    @apply mt-4
+}
+
+@media only screen and (min-width: 1600px) {
+    .content .content-block {
+        @apply w-[50%]
+    }
+}
